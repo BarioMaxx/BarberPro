@@ -1,0 +1,167 @@
+Attached HTML and CSS Context
+
+<html lang="en"><head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>BarberPro — Booking System</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="container">
+			<header class="site-header">
+				<a class="brand" href="#" aria-label="BarberPro Home">
+					<div class="logo">BP</div>
+					<div>
+						<strong>BarberPro</strong>
+						<div class="muted-small">High-end grooming</div>
+					</div>
+				</a>
+				<nav class="nav-actions" aria-label="primary">
+					<button class="btn-ghost" type="button">Services</button>
+					<button class="btn-ghost" type="button">About</button>
+					<button class="btn-book" id="bookNow" type="button"><span class="icon">✂️</span>Book Now</button>
+				</nav>
+			</header>
+
+			<section class="hero" aria-labelledby="hero-title">
+				<div class="panel">
+					<h1 id="hero-title">Precision cuts. Premium experience.</h1>
+					<p class="lead">Book your appointment with our top-tier barbers. Simple, fast, and personal.</p>
+					<div style="margin-top:14px">
+						<button class="btn-book booking-btn" type="button" style=""><span class="icon">⚡</span>Book Now</button>
+					</div>
+				</div>
+
+				<aside class="panel" aria-label="featured services">
+					<div class="cards">
+						<div class="card">
+							<h3>Classic Cut</h3>
+							<div class="muted">45 min • $35</div>
+						</div>
+						<div class="card">
+							<h3>Fade</h3>
+							<div class="muted">60 min • $45</div>
+						</div>
+						<div class="card">
+							<h3>Beard Trim</h3>
+							<div class="muted">30 min • $25</div>
+						</div>
+						<div class="card">
+							<h3>Hot Towel Shave</h3>
+							<div class="muted">40 min • $40</div>
+						</div>
+					</div>
+				</aside>
+			</section>
+
+			<footer class="muted-small" style="margin-top:24px">© 2026 BarberPro</footer>
+		</div>
+
+		<!-- Booking script: creates modal and handles form -->
+		<script src="script.js"></script>
+	
+
+<div class="modal-overlay active" id="bookingModal">
+      <div class="modal-backdrop" data-close=""></div>
+      <div class="modal" role="dialog" aria-modal="true" aria-labelledby="bookingTitle">
+        <header>
+          <h2 id="bookingTitle">Book an Appointment</h2>
+          <button class="close-btn" aria-label="Close booking dialog" data-close="">×</button>
+        </header>
+        <form class="booking-form" novalidate="">
+          <div class="form-grid">
+            <div class="form-row">
+              <label for="b-name">Full name</label>
+              <input id="b-name" name="name" type="text" required="" placeholder="Jane Doe">
+            </div>
+            <div class="form-row">
+              <label for="b-phone">Phone</label>
+              <input id="b-phone" name="phone" type="tel" required="" placeholder="(555) 555-5555">
+            </div>
+            <div class="form-row">
+              <label for="b-email">Email</label>
+              <input id="b-email" name="email" type="email" placeholder="you@domain.com">
+            </div>
+            <div class="form-row">
+              <label for="b-service">Service</label>
+              <select id="b-service" name="service">
+                <option>Classic Cut</option>
+                <option>Fade</option>
+                <option>Beard Trim</option>
+                <option>Hot Towel Shave</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-grid">
+            <div class="form-row">
+              <label for="b-date">Date</label>
+              <input id="b-date" name="date" type="date" required="">
+            </div>
+            <div class="form-row">
+              <label for="b-time">Time</label>
+              <input id="b-time" name="time" type="time" required="">
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="b-notes">Notes (optional)</label>
+            <textarea id="b-notes" name="notes" placeholder="Any preferences or notes..."></textarea>
+          </div>
+          <div class="form-actions">
+            <div class="note muted-small">We will confirm availability shortly.</div>
+            <div style="flex:1"></div>
+            <button type="button" class="btn-ghost" data-close="">Cancel</button>
+            <button type="submit" class="btn-book">Confirm Booking</button>
+          </div>
+        </form>
+      </div>
+    </div></body></html>
+
+
+/* Matched Rule from user-agent */
+html {
+  display: block;
+}
+
+/* Matched Rule from user-agent */
+:root {
+  view-transition-name: root;
+}
+
+/* Matched Rule from regular */
+* {
+  box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Matched Rule from regular */
+html, body {
+  height: 100%;
+  height: 100%;
+}
+
+/* Matched Rule from regular */
+:root {
+  --bg: #05060a;
+  --bg-2: #0b0f14;
+  --surface: #0f1720;
+  --muted: #9aa4ae;
+  --text: #e6eef6;
+  --accent: #ff7a59;
+  --accent-2: #6ef3d6;
+  --glass: rgba(255,255,255,0.03);
+  --card-shadow: 0 10px 30px rgba(2,6,23,0.6);
+  --radius: 14px;
+  --bg: #05060a;
+  --bg-2: #0b0f14;
+  --surface: #0f1720;
+  --muted: #9aa4ae;
+  --text: #e6eef6;
+  --accent: #ff7a59;
+  --accent-2: #6ef3d6;
+  --glass: rgba(255,255,255,0.03);
+  --card-shadow: 0 10px 30px rgba(2,6,23,0.6);
+  --radius: 14px;
+}

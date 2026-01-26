@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Angaza Barbershop — Book Your Appointment</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<header class="site-header">
+				<a class="brand" href="#" aria-label="Angaza Barbershop Home">
+					<div class="logo">AB</div>
+					<div>
+						<strong>Angaza Barbershop</strong>
+						<div class="muted-small">Premium grooming in Kenya</div>
+					</div>
+				</a>
+				<nav class="nav-actions" aria-label="primary">
+					<a href="tel:+254742849928" class="btn-ghost phone-btn" type="button">
+						<span class="icon">📞</span>+254 742 849 928
+					</a>
+					<button class="btn-book" id="bookNow" type="button"><span class="icon">✂️</span>Book Now</button>
+				</nav>
+			</header>
+
+			<section class="hero" aria-labelledby="hero-title">
+				<div class="panel">
+					<h1 id="hero-title">Fresh cuts. Premium experience.</h1>
+					<p class="lead">Book your appointment with Angaza Barbershop's expert barbers. Professional grooming services in Kenya.</p>
+					<div style="margin-top:14px; display:flex; gap:12px; flex-wrap:wrap;">
+						<button class="btn-book booking-btn" type="button"><span class="icon">⚡</span>Book Now</button>
+						<a href="tel:+254742849928" class="btn-ghost" style="text-decoration:none; display:inline-flex; align-items:center; gap:8px;">
+							<span class="icon">📞</span>Call Us
+						</a>
+					</div>
+				</div>
+
+				<aside class="panel" aria-label="featured services">
+					<div class="cards">
+						<div class="card">
+							<h3>Fade / Taper</h3>
+							<div class="muted">High & Low • KES 700</div>
+						</div>
+						<div class="card">
+							<h3>Twists</h3>
+							<div class="muted">Premium styling • KES 1,500</div>
+						</div>
+						<div class="card">
+							<h3>Cornrows</h3>
+							<div class="muted">Expert braiding • KES 1,500</div>
+						</div>
+						<div class="card">
+							<h3>Finger Coils</h3>
+							<div class="muted">Signature style • KES 2,000</div>
+						</div>
+					</div>
+				</aside>
+			</section>
+
+			<!-- Contact Section -->
+			<section class="contact-section panel" style="margin-top:24px;">
+				<h2 style="margin:0 0 12px 0; font-size:20px;">Get in Touch</h2>
+				<div class="contact-info">
+					<div class="contact-item">
+						<span class="icon" style="font-size:24px;">📞</span>
+						<div>
+							<div style="font-weight:600; color:var(--accent-2);">Reception Line</div>
+							<a href="tel:+254742849928" style="color:var(--text); text-decoration:none; font-size:18px; font-weight:600;">
+								+254 742 849 928
+							</a>
+							<div class="muted-small">Call us for appointments & inquiries</div>
+						</div>
+					</div>
+					<div class="contact-item">
+						<span class="icon" style="font-size:24px;">📍</span>
+						<div>
+							<div style="font-weight:600;">Location</div>
+							<div class="muted">Nairobi, Kenya</div>
+						</div>
+					</div>
+					<div class="contact-item">
+						<span class="icon" style="font-size:24px;">🕒</span>
+						<div>
+							<div style="font-weight:600;">Hours</div>
+							<div class="muted">Mon-Sat: 8AM - 8PM</div>
+							<div class="muted">Sunday: 9AM - 6PM</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<footer class="muted-small" style="margin-top:24px; display: flex; justify-content: space-between; align-items: center;">
+				<span>© 2026 Angaza Barbershop • Made in Kenya 🇰🇪</span>
+				<a href="admin.html" style="color: var(--muted); text-decoration: none; font-size: 12px; opacity: 0.5; transition: opacity 0.2s ease;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.5'">Admin</a>
+			</footer>
+		</div>
+
+		<!-- Booking script: creates modal and handles form -->
+		<script src="script.js"></script>
+	</body>
+</html>
