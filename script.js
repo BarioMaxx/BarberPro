@@ -259,8 +259,12 @@
     const navButtons = qsa('.nav-actions .btn-ghost');
     navButtons.forEach(btn => {
       btn.addEventListener('click', function(e){
-        e.preventDefault();
         const text = btn.textContent.trim();
+        // Only intercept internal nav buttons (e.g., Services/About).
+        // Allow normal behavior for external links (Instagram) and tel: links.
+        if(text !== 'Services' && text !== 'About') return;
+
+        e.preventDefault();
         
         // Add click animation
         btn.style.transform = 'scale(0.96)';
@@ -295,21 +299,21 @@
       <div class="modal-backdrop" data-close-about></div>
       <div class="modal" role="dialog" aria-modal="true" aria-labelledby="aboutTitle">
         <header>
-          <h2 id="aboutTitle">About BarberPro</h2>
+          <h2 id="aboutTitle">About Heritage Blade</h2>
           <button class="close-btn" aria-label="Close about dialog" data-close-about>×</button>
         </header>
         <div style="padding: 20px 0;">
           <p style="margin-bottom: 16px; color: var(--text); line-height: 1.6;">
-            Welcome to <strong style="color: var(--accent);">BarberPro</strong> — your destination for precision cuts and premium grooming experiences.
+            Welcome to <strong style="color: var(--accent);">Heritage Blade</strong> — your destination for precision cuts and premium grooming experiences.
           </p>
           <p style="margin-bottom: 16px; color: var(--muted); line-height: 1.6;">
             Our expert barbers combine traditional techniques with modern styles to deliver exceptional results. 
             Whether you need a classic cut, fresh fade, beard trim, or hot towel shave, we've got you covered.
           </p>
           <div style="background: var(--glass); padding: 14px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.04); margin-bottom: 16px;">
-            <div style="margin-bottom: 8px;"><strong>📍 Location:</strong> 123 Barber Street, Style City</div>
-            <div style="margin-bottom: 8px;"><strong>⏰ Hours:</strong> Mon-Sat 9AM-8PM, Sun 10AM-6PM</div>
-            <div><strong>📞 Phone:</strong> (555) 123-4567</div>
+            <div style="margin-bottom: 8px;"><strong>📍 Location:</strong> Moi avenue, Moi, Nairobi Area, Kenya 00100</div>
+            <div style="margin-bottom: 8px;"><strong>⏰ Hours:</strong> Mon-Sat 8AM-8PM, Sun 9AM-6PM</div>
+            <div><strong>📞 Phone:</strong> +2547 14 343 855</div>
           </div>
           <p style="color: var(--accent-2); font-size: 13px; margin: 0;">
             ✨ Book your appointment today and experience the difference!
@@ -378,7 +382,8 @@
         setTimeout(()=>{
           const serviceSelect = qs('#b-service');
           if(serviceSelect && serviceName){
-            serviceSelect.value = serviceName;
+            const option = Array.from(serviceSelect.options).find(o => (o.textContent || '').trim().startsWith(serviceName));
+            if(option) serviceSelect.value = option.value;
           }
         }, 100);
       });

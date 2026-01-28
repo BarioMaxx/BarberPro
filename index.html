@@ -1,9 +1,10 @@
 <!doctype html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8" />
+        <meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Angaza Barbershop — Book Your Appointment</title>
+		<title>Heritage Blade — Book Your Appointment</title>
+		<link rel="icon" href="favicon.png" type="image/png">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -12,16 +13,19 @@
 	<body>
 		<div class="container">
 			<header class="site-header">
-				<a class="brand" href="#" aria-label="Angaza Barbershop Home">
+				<a class="brand" href="https://heritageblade.bario.me/" aria-label="Heritage Blade Home">
 					<div class="logo">AB</div>
 					<div>
-						<strong>Angaza Barbershop</strong>
+						<strong>Heritage Blade</strong>
 						<div class="muted-small">Premium grooming in Kenya</div>
 					</div>
 				</a>
 				<nav class="nav-actions" aria-label="primary">
-					<a href="tel:+254742849928" class="btn-ghost phone-btn" type="button">
-						<span class="icon">📞</span>+254 742 849 928
+					<a href="https://www.instagram.com/_heritage_blade/" class="btn-ghost" target="_blank" rel="noopener noreferrer" aria-label="Instagram - Heritage Blade">
+						<span class="icon">📷</span>Instagram
+					</a>
+					<a href="tel:+254714343855" class="btn-ghost phone-btn" aria-label="Call +2547 14 343 855">
+						<span class="icon">📞</span>+2547 14 343 855
 					</a>
 					<button class="btn-book" id="bookNow" type="button"><span class="icon">✂️</span>Book Now</button>
 				</nav>
@@ -30,10 +34,10 @@
 			<section class="hero" aria-labelledby="hero-title">
 				<div class="panel">
 					<h1 id="hero-title">Fresh cuts. Premium experience.</h1>
-					<p class="lead">Book your appointment with Angaza Barbershop's expert barbers. Professional grooming services in Kenya.</p>
+					<p class="lead">Book your appointment with Heritage Blade's expert barbers. Professional grooming services in Kenya.</p>
 					<div style="margin-top:14px; display:flex; gap:12px; flex-wrap:wrap;">
 						<button class="btn-book booking-btn" type="button"><span class="icon">⚡</span>Book Now</button>
-						<a href="tel:+254742849928" class="btn-ghost" style="text-decoration:none; display:inline-flex; align-items:center; gap:8px;">
+						<a href="tel:+254714343855" class="btn-ghost" style="text-decoration:none; display:inline-flex; align-items:center; gap:8px;">
 							<span class="icon">📞</span>Call Us
 						</a>
 					</div>
@@ -61,6 +65,34 @@
 				</aside>
 			</section>
 
+			<!-- Cuts & Styles Showcase -->
+			<section class="panel" aria-labelledby="showcase-title" style="margin-top:24px;">
+				<h2 id="showcase-title" style="margin:0 0 12px 0; font-size:20px;">Cuts & Styles Showcase</h2>
+				<div class="cards">
+					<div class="card">
+						<h3>Fade / Taper</h3>
+						<div class="muted">Watch examples on Instagram</div>
+						<a href="https://www.instagram.com/_heritage_blade/reels/" class="btn-ghost" target="_blank" rel="noopener noreferrer" aria-label="Watch Fade/Taper reels on Instagram"><span class="icon">🎥</span>Watch on Instagram</a>
+					</div>
+					<div class="card">
+						<h3>Twists</h3>
+						<div class="muted">Watch examples on Instagram</div>
+						<a href="https://www.instagram.com/_heritage_blade/reels/" class="btn-ghost" target="_blank" rel="noopener noreferrer" aria-label="Watch Twists reels on Instagram"><span class="icon">🎥</span>Watch on Instagram</a>
+					</div>
+					<div class="card">
+						<h3>Cornrows</h3>
+						<div class="muted">Watch examples on Instagram</div>
+						<a href="https://www.instagram.com/_heritage_blade/reels/" class="btn-ghost" target="_blank" rel="noopener noreferrer" aria-label="Watch Cornrows reels on Instagram"><span class="icon">🎥</span>Watch on Instagram</a>
+					</div>
+					<div class="card">
+						<h3>Finger Coils</h3>
+						<div class="muted">Watch examples on Instagram</div>
+						<a href="https://www.instagram.com/_heritage_blade/reels/" class="btn-ghost" target="_blank" rel="noopener noreferrer" aria-label="Watch Finger Coils reels on Instagram"><span class="icon">🎥</span>Watch on Instagram</a>
+					</div>
+				</div>
+				<div class="muted-small" style="margin-top:8px;">Tip: Replace these links with specific post URLs to highlight exact examples.</div>
+			</section>
+
 			<!-- Contact Section -->
 			<section class="contact-section panel" style="margin-top:24px;">
 				<h2 style="margin:0 0 12px 0; font-size:20px;">Get in Touch</h2>
@@ -69,8 +101,8 @@
 						<span class="icon" style="font-size:24px;">📞</span>
 						<div>
 							<div style="font-weight:600; color:var(--accent-2);">Reception Line</div>
-							<a href="tel:+254742849928" style="color:var(--text); text-decoration:none; font-size:18px; font-weight:600;">
-								+254 742 849 928
+							<a href="tel:+254714343855" style="color:var(--text); text-decoration:none; font-size:18px; font-weight:600;">
+								+2547 14 343 855
 							</a>
 							<div class="muted-small">Call us for appointments & inquiries</div>
 						</div>
@@ -79,7 +111,7 @@
 						<span class="icon" style="font-size:24px;">📍</span>
 						<div>
 							<div style="font-weight:600;">Location</div>
-							<div class="muted">Nairobi, Kenya</div>
+							<div class="muted">Moi avenue, Moi, Nairobi Area, Kenya 00100</div>
 						</div>
 					</div>
 					<div class="contact-item">
@@ -93,9 +125,22 @@
 				</div>
 			</section>
 
+			<!-- Follow Us Block -->
+			<section class="panel" aria-labelledby="follow-title" style="margin-top:24px;">
+				<h2 id="follow-title" style="margin:0 0 12px 0; font-size:20px;">Follow Us</h2>
+				<p class="muted" style="margin:0 0 12px 0;">See our latest cuts, reels, and behind-the-scenes.</p>
+				<div class="social-links">
+					<a href="https://www.instagram.com/_heritage_blade/" class="btn-book" target="_blank" rel="noopener noreferrer" aria-label="Follow Heritage Blade on Instagram"><span class="icon">📷</span>Follow on Instagram</a>
+					<a href="https://www.instagram.com/_heritage_blade/reels/" class="btn-ghost" target="_blank" rel="noopener noreferrer" aria-label="Watch Heritage Blade reels on Instagram"><span class="icon">🎥</span>Watch Reels</a>
+				</div>
+			</section>
+
 			<footer class="muted-small" style="margin-top:24px; display: flex; justify-content: space-between; align-items: center;">
-				<span>© 2026 Angaza Barbershop • Made in Kenya 🇰🇪</span>
-				<a href="admin.html" style="color: var(--muted); text-decoration: none; font-size: 12px; opacity: 0.5; transition: opacity 0.2s ease;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.5'">Admin</a>
+				<span>© 2026 Heritage Blade • Made in Kenya 🇰🇪</span>
+				<div>
+					<a href="https://www.instagram.com/_heritage_blade/" target="_blank" rel="noopener noreferrer" style="color: var(--muted); text-decoration: none; font-size: 12px; opacity: 0.5; transition: opacity 0.2s ease; margin-right: 12px;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.5'">Instagram</a>
+					<a href="https://heritageblade.bario.me/admin.html" style="color: var(--muted); text-decoration: none; font-size: 12px; opacity: 0.5; transition: opacity 0.2s ease;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.5'">Admin</a>
+				</div>
 			</footer>
 		</div>
 

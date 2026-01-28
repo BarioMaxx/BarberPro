@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Heritage Blade Admin — Customers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="site-header">
+		<a class="brand" href="https://heritageblade.bario.me/" aria-label="Heritage Blade Home">
+          <div class="logo">AB</div>
+          <div>
+            <strong>Heritage Blade</strong>
+            <div class="muted-small">Admin — Customers</div>
+          </div>
+        </a>
+        <nav class="nav-actions" aria-label="admin-actions">
+			<a href="https://heritageblade.bario.me/" class="btn-ghost">Site</a>
+        </nav>
+      </header>
+
+      <section class="panel" aria-labelledby="admin-title">
+        <h1 id="admin-title" style="margin:0 0 12px 0; font-size:22px;">Customers</h1>
+        <div style="display:flex; gap:12px; flex-wrap:wrap; align-items:center; margin-bottom:12px;">
+          <input id="search" type="text" placeholder="Search name, phone, email" style="flex:1; min-width:260px;" />
+          <button id="refresh" class="btn-ghost">Refresh</button>
+        </div>
+
+        <div class="panel" style="margin-bottom:16px;">
+          <h2 style="margin:0 0 8px 0; font-size:18px;">Add Customer</h2>
+          <form id="addForm" class="booking-form" novalidate>
+            <div class="form-grid">
+              <div class="form-row">
+                <label for="c-name">Full name</label>
+                <input id="c-name" name="name" type="text" required placeholder="Jane Doe">
+              </div>
+              <div class="form-row">
+                <label for="c-phone">Phone</label>
+                <input id="c-phone" name="phone" type="tel" placeholder="+254...">
+              </div>
+              <div class="form-row">
+                <label for="c-email">Email</label>
+                <input id="c-email" name="email" type="email" placeholder="you@domain.com">
+              </div>
+            </div>
+            <div class="form-row">
+              <label for="c-comment">Comment</label>
+              <textarea id="c-comment" name="comment" placeholder="Staff notes, preferences, etc."></textarea>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn-book">Save Customer</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="panel">
+          <h2 style="margin:0 0 8px 0; font-size:18px;">All Customers</h2>
+          <div class="muted-small" style="margin-bottom:8px;">Click a comment to edit inline. Press Enter to save.</div>
+          <table style="width:100%; border-collapse: collapse;">
+            <thead>
+              <tr style="text-align:left;">
+                <th style="padding:8px;">Name</th>
+                <th style="padding:8px;">Phone</th>
+                <th style="padding:8px;">Email</th>
+                <th style="padding:8px;">Comment</th>
+                <th style="padding:8px;">Updated</th>
+              </tr>
+            </thead>
+            <tbody id="rows"></tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+
+    <script src="admin.js"></script>
+  </body>
+</html>
