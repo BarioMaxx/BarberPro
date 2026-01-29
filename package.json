@@ -3,7 +3,19 @@
   "private": true,
   "version": "1.0.0",
   "description": "Heritage Blade site + Vercel API routes",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
   "dependencies": {
-    "mongoose": "^8.10.0"
+    "mongoose": "^8.10.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.22.3"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^5.4.14"
   }
 }
