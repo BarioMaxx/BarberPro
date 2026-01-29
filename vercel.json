@@ -1,9 +1,4 @@
 {
-  "functions": {
-    "api/**/*.js": {
-      "runtime": "nodejs20.x"
-    }
-  },
   "installCommand": "npm install",
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
