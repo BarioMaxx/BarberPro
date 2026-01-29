@@ -3,6 +3,10 @@
   "private": true,
   "version": "1.0.0",
   "description": "Heritage Blade site + Vercel API routes",
+  "engines": {
+    "node": "20.x"
+  },
+  "packageManager": "npm@10",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
